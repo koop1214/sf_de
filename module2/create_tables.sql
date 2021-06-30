@@ -2,9 +2,6 @@ CREATE DATABASE IF NOT EXISTS ai;
 
 USE ai;
 
-SELECT VERSION();
-SHOW TABLES;
-
 CREATE TABLE IF NOT EXISTS cities
 (
     country    STRING,
@@ -44,22 +41,22 @@ CREATE TABLE IF NOT EXISTS countries
     region           STRING,
     population       INT,
     area             INT,
-    pop_density      DECIMAL(5, 1),
-    coastline        DECIMAL(5, 2),
-    net_migration    DECIMAL(4, 2),
-    infant_mortality DECIMAL(5, 2),
+    pop_density      STRING,
+    coastline        STRING,
+    net_migration    STRING,
+    infant_mortality STRING,
     gdp              INT,
-    literacy         DECIMAL(4, 1),
-    phones           DECIMAL(5, 1),
-    arable           DECIMAL(4, 2),
-    crops            DECIMAL(4, 2),
-    other            DECIMAL(5, 2),
+    literacy         STRING,
+    phones           STRING,
+    arable           STRING,
+    crops            STRING,
+    other            STRING,
     climate          TINYINT,
-    birthrate        DECIMAL(5, 2),
-    deathrate        DECIMAL(5, 2),
-    agriculture      DECIMAL(4, 3),
-    industry         DECIMAL(4, 3),
-    service          DECIMAL(4, 3)
+    birthrate        STRING,
+    deathrate        STRING,
+    agriculture      STRING,
+    industry         STRING,
+    service          STRING
 );
 
 CREATE TABLE IF NOT EXISTS continents
