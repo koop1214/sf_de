@@ -11,7 +11,8 @@ CREATE TABLE IF NOT EXISTS cities
     population INT,
     latitude   DECIMAL(8, 6),
     longitude  DECIMAL(8, 6)
-);
+)
+    COMMENT 'skillfactory.cities';
 
 CREATE TABLE IF NOT EXISTS nobel_laureates
 (
@@ -33,7 +34,8 @@ CREATE TABLE IF NOT EXISTS nobel_laureates
     death_date           DATE,
     death_city           STRING,
     death_country        STRING
-);
+)
+    COMMENT 'nobel-laureates.csv';
 
 CREATE TABLE IF NOT EXISTS countries
 (
@@ -57,43 +59,50 @@ CREATE TABLE IF NOT EXISTS countries
     agriculture      DECIMAL(4, 3),
     industry         DECIMAL(4, 3),
     service          DECIMAL(4, 3)
-);
+)
+    COMMENT 'countries_of_the_world.csv';
 
 CREATE TABLE IF NOT EXISTS continents
 (
     country_code   STRING,
     continent_code STRING
-);
+)
+    COMMENT 'continent.json';
 
 CREATE TABLE IF NOT EXISTS currencies
 (
     country_code  STRING,
     currency_code STRING
-);
+)
+    COMMENT 'currency.json';
 
 CREATE TABLE IF NOT EXISTS iso3
 (
     iso2_country_code STRING,
     iso3_country_code STRING
-);
+)
+    COMMENT 'iso3.json';
 
 CREATE TABLE IF NOT EXISTS country_names
 (
     country_code STRING,
     country_name STRING
-);
+)
+    COMMENT 'names.json';
 
 CREATE TABLE IF NOT EXISTS capitals
 (
     country_code STRING,
     capital      STRING
-);
+)
+    COMMENT 'capital.json';
 
 CREATE TABLE IF NOT EXISTS phones
 (
     country_code STRING,
     phone_code   STRING
-);
+)
+    COMMENT 'phone.json';
 
 
 
