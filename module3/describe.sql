@@ -1,0 +1,136 @@
+DESCRIBE EXTENDED undkit_staging.cities_orc;
+-- +-----------------------------+----------------------------------------------------+----------+
+-- |          col_name           |                     data_type                      | comment  |
+-- +-----------------------------+----------------------------------------------------+----------+
+-- | country                     | string                                             |          |
+-- | city                        | string                                             |          |
+-- | accentcity                  | string                                             |          |
+-- | region                      | string                                             |          |
+-- | population                  | double                                             |          |
+-- | latitude                    | double                                             |          |
+-- | longitude                   | double                                             |          |
+-- |                             | NULL                                               | NULL     |
+-- | Detailed Table Information  | Table(tableName:cities_orc, dbName:undkit_staging, owner:hive, createTime:1625849451, lastAccessTime:0, retention:0, sd:StorageDescriptor(cols:[FieldSchema(name:country, type:string, comment:null), FieldSchema(name:city, type:string, comment:null), FieldSchema(name:accentcity, type:string, comment:null), FieldSchema(name:region, type:string, comment:null), FieldSchema(name:population, type:double, comment:null), FieldSchema(name:latitude, type:double, comment:null), FieldSchema(name:longitude, type:double, comment:null)], location:hdfs://adh-master:8020/apps/hive/warehouse/undkit_staging.db/cities_orc, inputFormat:org.apache.hadoop.hive.ql.io.orc.OrcInputFormat, outputFormat:org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat, compressed:false, numBuckets:-1, serdeInfo:SerDeInfo(name:null, serializationLib:org.apache.hadoop.hive.ql.io.orc.OrcSerde, parameters:{serialization.format=1}), bucketCols:[], sortCols:[], parameters:{}, skewedInfo:SkewedInfo(skewedColNames:[], skewedColValues:[], skewedColValueLocationMaps:{}), storedAsSubDirectories:false), partitionKeys:[], parameters:{totalSize=33893109, numRows=3173958, rawDataSize=1212451956, COLUMN_STATS_ACCURATE={\"BASIC_STATS\":\"true\"}, numFiles=1, transient_lastDdlTime=1625849451, bucketing_version=2}, viewOriginalText:null, viewExpandedText:null, tableType:MANAGED_TABLE, rewriteEnabled:false, catName:hive, ownerType:USER) |          |
+
+DESCRIBE FORMATTED undkit_staging.cities_orc;
+-- +-------------------------------+----------------------------------------------------+-----------------------------+
+-- |           col_name            |                     data_type                      |           comment           |
+-- +-------------------------------+----------------------------------------------------+-----------------------------+
+-- | # col_name                    | data_type                                          | comment                     |
+-- | country                       | string                                             |                             |
+-- | city                          | string                                             |                             |
+-- | accentcity                    | string                                             |                             |
+-- | region                        | string                                             |                             |
+-- | population                    | double                                             |                             |
+-- | latitude                      | double                                             |                             |
+-- | longitude                     | double                                             |                             |
+-- |                               | NULL                                               | NULL                        |
+-- | # Detailed Table Information  | NULL                                               | NULL                        |
+-- | Database:                     | undkit_staging                                     | NULL                        |
+-- | OwnerType:                    | USER                                               | NULL                        |
+-- | Owner:                        | hive                                               | NULL                        |
+-- | CreateTime:                   | Fri Jul 09 16:50:51 UTC 2021                       | NULL                        |
+-- | LastAccessTime:               | UNKNOWN                                            | NULL                        |
+-- | Retention:                    | 0                                                  | NULL                        |
+-- | Location:                     | hdfs://adh-master:8020/apps/hive/warehouse/undkit_staging.db/cities_orc | NULL                        |
+-- | Table Type:                   | MANAGED_TABLE                                      | NULL                        |
+-- | Table Parameters:             | NULL                                               | NULL                        |
+-- |                               | COLUMN_STATS_ACCURATE                              | {\"BASIC_STATS\":\"true\"}  |
+-- |                               | bucketing_version                                  | 2                           |
+-- |                               | numFiles                                           | 1                           |
+-- |                               | numRows                                            | 3173958                     |
+-- |                               | rawDataSize                                        | 1212451956                  |
+-- |                               | totalSize                                          | 33893109                    |
+-- |                               | transient_lastDdlTime                              | 1625849451                  |
+-- |                               | NULL                                               | NULL                        |
+-- | # Storage Information         | NULL                                               | NULL                        |
+-- | SerDe Library:                | org.apache.hadoop.hive.ql.io.orc.OrcSerde          | NULL                        |
+-- | InputFormat:                  | org.apache.hadoop.hive.ql.io.orc.OrcInputFormat    | NULL                        |
+-- | OutputFormat:                 | org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat   | NULL                        |
+-- | Compressed:                   | No                                                 | NULL                        |
+-- | Num Buckets:                  | -1                                                 | NULL                        |
+-- | Bucket Columns:               | []                                                 | NULL                        |
+-- | Sort Columns:                 | []                                                 | NULL                        |
+-- | Storage Desc Params:          | NULL                                               | NULL                        |
+-- |                               | serialization.format                               | 1                           |
+-- +-------------------------------+----------------------------------------------------+-----------------------------+
+
+DESCRIBE EXTENDED undkit_staging.nobel_laureates_orc;
+-- +-----------------------------+----------------------------------------------------+----------+
+-- |          col_name           |                     data_type                      | comment  |
+-- +-----------------------------+----------------------------------------------------+----------+
+-- | year                        | smallint                                           |          |
+-- | category                    | string                                             |          |
+-- | prize                       | string                                             |          |
+-- | motivation                  | string                                             |          |
+-- | prize_share                 | string                                             |          |
+-- | laureate_id                 | smallint                                           |          |
+-- | laureate_type               | string                                             |          |
+-- | full_name                   | string                                             |          |
+-- | birth_date                  | date                                               |          |
+-- | birth_city                  | string                                             |          |
+-- | birth_country               | string                                             |          |
+-- | sex                         | string                                             |          |
+-- | organization_name           | string                                             |          |
+-- | organization_city           | string                                             |          |
+-- | organization_country        | string                                             |          |
+-- | death_date                  | date                                               |          |
+-- | death_city                  | string                                             |          |
+-- | death_country               | string                                             |          |
+-- |                             | NULL                                               | NULL     |
+-- | Detailed Table Information  | Table(tableName:nobel_laureates_orc, dbName:undkit_staging, owner:hive, createTime:1625856656, lastAccessTime:0, retention:0, sd:StorageDescriptor(cols:[FieldSchema(name:year, type:smallint, comment:null), FieldSchema(name:category, type:string, comment:null), FieldSchema(name:prize, type:string, comment:null), FieldSchema(name:motivation, type:string, comment:null), FieldSchema(name:prize_share, type:string, comment:null), FieldSchema(name:laureate_id, type:smallint, comment:null), FieldSchema(name:laureate_type, type:string, comment:null), FieldSchema(name:full_name, type:string, comment:null), FieldSchema(name:birth_date, type:date, comment:null), FieldSchema(name:birth_city, type:string, comment:null), FieldSchema(name:birth_country, type:string, comment:null), FieldSchema(name:sex, type:string, comment:null), FieldSchema(name:organization_name, type:string, comment:null), FieldSchema(name:organization_city, type:string, comment:null), FieldSchema(name:organization_country, type:string, comment:null), FieldSchema(name:death_date, type:date, comment:null), FieldSchema(name:death_city, type:string, comment:null), FieldSchema(name:death_country, type:string, comment:null)], location:hdfs://adh-master:8020/apps/hive/warehouse/undkit_staging.db/nobel_laureates_orc, inputFormat:org.apache.hadoop.hive.ql.io.orc.OrcInputFormat, outputFormat:org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat, compressed:false, numBuckets:-1, serdeInfo:SerDeInfo(name:null, serializationLib:org.apache.hadoop.hive.ql.io.orc.OrcSerde, parameters:{serialization.format=1}), bucketCols:[], sortCols:[], parameters:{}, skewedInfo:SkewedInfo(skewedColNames:[], skewedColValues:[], skewedColValueLocationMaps:{}), storedAsSubDirectories:false), partitionKeys:[], parameters:{totalSize=64094, numRows=969, rawDataSize=1472862, COLUMN_STATS_ACCURATE={\"BASIC_STATS\":\"true\"}, numFiles=1, transient_lastDdlTime=1625856656, bucketing_version=2}, viewOriginalText:null, viewExpandedText:null, tableType:MANAGED_TABLE, rewriteEnabled:false, catName:hive, ownerType:USER) |          |
+-- +-----------------------------+----------------------------------------------------+----------+
+
+DESCRIBE FORMATTED undkit_staging.nobel_laureates_orc;
+-- +-------------------------------+----------------------------------------------------+-----------------------------+
+-- |           col_name            |                     data_type                      |           comment           |
+-- +-------------------------------+----------------------------------------------------+-----------------------------+
+-- | # col_name                    | data_type                                          | comment                     |
+-- | year                          | smallint                                           |                             |
+-- | category                      | string                                             |                             |
+-- | prize                         | string                                             |                             |
+-- | motivation                    | string                                             |                             |
+-- | prize_share                   | string                                             |                             |
+-- | laureate_id                   | smallint                                           |                             |
+-- | laureate_type                 | string                                             |                             |
+-- | full_name                     | string                                             |                             |
+-- | birth_date                    | date                                               |                             |
+-- | birth_city                    | string                                             |                             |
+-- | birth_country                 | string                                             |                             |
+-- | sex                           | string                                             |                             |
+-- | organization_name             | string                                             |                             |
+-- | organization_city             | string                                             |                             |
+-- | organization_country          | string                                             |                             |
+-- | death_date                    | date                                               |                             |
+-- | death_city                    | string                                             |                             |
+-- | death_country                 | string                                             |                             |
+-- |                               | NULL                                               | NULL                        |
+-- | # Detailed Table Information  | NULL                                               | NULL                        |
+-- | Database:                     | undkit_staging                                     | NULL                        |
+-- | OwnerType:                    | USER                                               | NULL                        |
+-- | Owner:                        | hive                                               | NULL                        |
+-- | CreateTime:                   | Fri Jul 09 18:50:56 UTC 2021                       | NULL                        |
+-- | LastAccessTime:               | UNKNOWN                                            | NULL                        |
+-- | Retention:                    | 0                                                  | NULL                        |
+-- | Location:                     | hdfs://adh-master:8020/apps/hive/warehouse/undkit_staging.db/nobel_laureates_orc | NULL                        |
+-- | Table Type:                   | MANAGED_TABLE                                      | NULL                        |
+-- | Table Parameters:             | NULL                                               | NULL                        |
+-- |                               | COLUMN_STATS_ACCURATE                              | {\"BASIC_STATS\":\"true\"}  |
+-- |                               | bucketing_version                                  | 2                           |
+-- |                               | numFiles                                           | 1                           |
+-- |                               | numRows                                            | 969                         |
+-- |                               | rawDataSize                                        | 1472862                     |
+-- |                               | totalSize                                          | 64094                       |
+-- |                               | transient_lastDdlTime                              | 1625856656                  |
+-- |                               | NULL                                               | NULL                        |
+-- | # Storage Information         | NULL                                               | NULL                        |
+-- | SerDe Library:                | org.apache.hadoop.hive.ql.io.orc.OrcSerde          | NULL                        |
+-- | InputFormat:                  | org.apache.hadoop.hive.ql.io.orc.OrcInputFormat    | NULL                        |
+-- | OutputFormat:                 | org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat   | NULL                        |
+-- | Compressed:                   | No                                                 | NULL                        |
+-- | Num Buckets:                  | -1                                                 | NULL                        |
+-- | Bucket Columns:               | []                                                 | NULL                        |
+-- | Sort Columns:                 | []                                                 | NULL                        |
+-- | Storage Desc Params:          | NULL                                               | NULL                        |
+-- |                               | serialization.format                               | 1                           |
+-- +-------------------------------+----------------------------------------------------+-----------------------------+
