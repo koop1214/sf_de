@@ -134,3 +134,376 @@ DESCRIBE FORMATTED undkit_staging.nobel_laureates_orc;
 -- | Storage Desc Params:          | NULL                                               | NULL                        |
 -- |                               | serialization.format                               | 1                           |
 -- +-------------------------------+----------------------------------------------------+-----------------------------+
+
+DESCRIBE EXTENDED undkit_staging.phones_orc;
+-- +-----------------------------+----------------------------------------------------+----------+
+-- |          col_name           |                     data_type                      | comment  |
+-- +-----------------------------+----------------------------------------------------+----------+
+-- | country_code                | string                                             |          |
+-- | phone_code                  | string                                             |          |
+-- |                             | NULL                                               | NULL     |
+-- | Detailed Table Information  | Table(tableName:phones_orc, dbName:undkit_staging, owner:hive, createTime:1625990218, lastAccessTime:0, retention:0, sd:StorageDescriptor(cols:[FieldSchema(name:country_code, type:string, comment:null), FieldSchema(name:phone_code, type:string, comment:null)], location:hdfs://adh-master:8020/apps/hive/warehouse/undkit_staging.db/phones_orc, inputFormat:org.apache.hadoop.hive.ql.io.orc.OrcInputFormat, outputFormat:org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat, compressed:false, numBuckets:-1, serdeInfo:SerDeInfo(name:null, serializationLib:org.apache.hadoop.hive.ql.io.orc.OrcSerde, parameters:{serialization.format=1}), bucketCols:[], sortCols:[], parameters:{}, skewedInfo:SkewedInfo(skewedColNames:[], skewedColValues:[], skewedColValueLocationMaps:{}), storedAsSubDirectories:false), partitionKeys:[], parameters:{totalSize=1198, numRows=250, rawDataSize=43250, COLUMN_STATS_ACCURATE={\"BASIC_STATS\":\"true\"}, numFiles=1, transient_lastDdlTime=1625990219, bucketing_version=2}, viewOriginalText:null, viewExpandedText:null, tableType:MANAGED_TABLE, rewriteEnabled:false, catName:hive, ownerType:USER) |          |
+-- +-----------------------------+----------------------------------------------------+----------+
+
+DESCRIBE FORMATTED undkit_staging.phones_orc;
+-- +-------------------------------+----------------------------------------------------+-----------------------------+
+-- |           col_name            |                     data_type                      |           comment           |
+-- +-------------------------------+----------------------------------------------------+-----------------------------+
+-- | # col_name                    | data_type                                          | comment                     |
+-- | country_code                  | string                                             |                             |
+-- | phone_code                    | string                                             |                             |
+-- |                               | NULL                                               | NULL                        |
+-- | # Detailed Table Information  | NULL                                               | NULL                        |
+-- | Database:                     | undkit_staging                                     | NULL                        |
+-- | OwnerType:                    | USER                                               | NULL                        |
+-- | Owner:                        | hive                                               | NULL                        |
+-- | CreateTime:                   | Sun Jul 11 07:56:58 UTC 2021                       | NULL                        |
+-- | LastAccessTime:               | UNKNOWN                                            | NULL                        |
+-- | Retention:                    | 0                                                  | NULL                        |
+-- | Location:                     | hdfs://adh-master:8020/apps/hive/warehouse/undkit_staging.db/phones_orc | NULL                        |
+-- | Table Type:                   | MANAGED_TABLE                                      | NULL                        |
+-- | Table Parameters:             | NULL                                               | NULL                        |
+-- |                               | COLUMN_STATS_ACCURATE                              | {\"BASIC_STATS\":\"true\"}  |
+-- |                               | bucketing_version                                  | 2                           |
+-- |                               | numFiles                                           | 1                           |
+-- |                               | numRows                                            | 250                         |
+-- |                               | rawDataSize                                        | 43250                       |
+-- |                               | totalSize                                          | 1198                        |
+-- |                               | transient_lastDdlTime                              | 1625990219                  |
+-- |                               | NULL                                               | NULL                        |
+-- | # Storage Information         | NULL                                               | NULL                        |
+-- | SerDe Library:                | org.apache.hadoop.hive.ql.io.orc.OrcSerde          | NULL                        |
+-- | InputFormat:                  | org.apache.hadoop.hive.ql.io.orc.OrcInputFormat    | NULL                        |
+-- | OutputFormat:                 | org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat   | NULL                        |
+-- | Compressed:                   | No                                                 | NULL                        |
+-- | Num Buckets:                  | -1                                                 | NULL                        |
+-- | Bucket Columns:               | []                                                 | NULL                        |
+-- | Sort Columns:                 | []                                                 | NULL                        |
+-- | Storage Desc Params:          | NULL                                               | NULL                        |
+-- |                               | serialization.format                               | 1                           |
+-- +-------------------------------+----------------------------------------------------+-----------------------------+
+
+DESCRIBE EXTENDED undkit_staging.country_names_orc;
+-- +-----------------------------+----------------------------------------------------+----------+
+-- |          col_name           |                     data_type                      | comment  |
+-- +-----------------------------+----------------------------------------------------+----------+
+-- | country_code                | string                                             |          |
+-- | country_name                | string                                             |          |
+-- |                             | NULL                                               | NULL     |
+-- | Detailed Table Information  | Table(tableName:country_names_orc, dbName:undkit_staging, owner:hive, createTime:1625991424, lastAccessTime:0, retention:0, sd:StorageDescriptor(cols:[FieldSchema(name:country_code, type:string, comment:null), FieldSchema(name:country_name, type:string, comment:null)], location:hdfs://adh-master:8020/apps/hive/warehouse/undkit_staging.db/country_names_orc, inputFormat:org.apache.hadoop.hive.ql.io.orc.OrcInputFormat, outputFormat:org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat, compressed:false, numBuckets:-1, serdeInfo:SerDeInfo(name:null, serializationLib:org.apache.hadoop.hive.ql.io.orc.OrcSerde, parameters:{serialization.format=1}), bucketCols:[], sortCols:[], parameters:{}, skewedInfo:SkewedInfo(skewedColNames:[], skewedColValues:[], skewedColValueLocationMaps:{}), storedAsSubDirectories:false), partitionKeys:[], parameters:{totalSize=2278, numRows=250, rawDataSize=44750, COLUMN_STATS_ACCURATE={\"BASIC_STATS\":\"true\"}, numFiles=1, transient_lastDdlTime=1625991424, bucketing_version=2}, viewOriginalText:null, viewExpandedText:null, tableType:MANAGED_TABLE, rewriteEnabled:false, catName:hive, ownerType:USER) |          |
+-- +-----------------------------+----------------------------------------------------+----------+
+
+DESCRIBE FORMATTED undkit_staging.country_names_orc;
+-- +-------------------------------+----------------------------------------------------+-----------------------------+
+-- |           col_name            |                     data_type                      |           comment           |
+-- +-------------------------------+----------------------------------------------------+-----------------------------+
+-- | # col_name                    | data_type                                          | comment                     |
+-- | country_code                  | string                                             |                             |
+-- | country_name                  | string                                             |                             |
+-- |                               | NULL                                               | NULL                        |
+-- | # Detailed Table Information  | NULL                                               | NULL                        |
+-- | Database:                     | undkit_staging                                     | NULL                        |
+-- | OwnerType:                    | USER                                               | NULL                        |
+-- | Owner:                        | hive                                               | NULL                        |
+-- | CreateTime:                   | Sun Jul 11 08:17:04 UTC 2021                       | NULL                        |
+-- | LastAccessTime:               | UNKNOWN                                            | NULL                        |
+-- | Retention:                    | 0                                                  | NULL                        |
+-- | Location:                     | hdfs://adh-master:8020/apps/hive/warehouse/undkit_staging.db/country_names_orc | NULL                        |
+-- | Table Type:                   | MANAGED_TABLE                                      | NULL                        |
+-- | Table Parameters:             | NULL                                               | NULL                        |
+-- |                               | COLUMN_STATS_ACCURATE                              | {\"BASIC_STATS\":\"true\"}  |
+-- |                               | bucketing_version                                  | 2                           |
+-- |                               | numFiles                                           | 1                           |
+-- |                               | numRows                                            | 250                         |
+-- |                               | rawDataSize                                        | 44750                       |
+-- |                               | totalSize                                          | 2278                        |
+-- |                               | transient_lastDdlTime                              | 1625991424                  |
+-- |                               | NULL                                               | NULL                        |
+-- | # Storage Information         | NULL                                               | NULL                        |
+-- | SerDe Library:                | org.apache.hadoop.hive.ql.io.orc.OrcSerde          | NULL                        |
+-- | InputFormat:                  | org.apache.hadoop.hive.ql.io.orc.OrcInputFormat    | NULL                        |
+-- | OutputFormat:                 | org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat   | NULL                        |
+-- | Compressed:                   | No                                                 | NULL                        |
+-- | Num Buckets:                  | -1                                                 | NULL                        |
+-- | Bucket Columns:               | []                                                 | NULL                        |
+-- | Sort Columns:                 | []                                                 | NULL                        |
+-- | Storage Desc Params:          | NULL                                               | NULL                        |
+-- |                               | serialization.format                               | 1                           |
+-- +-------------------------------+----------------------------------------------------+-----------------------------+
+
+DESCRIBE EXTENDED undkit_staging.iso3_orc;
+-- +-----------------------------+----------------------------------------------------+----------+
+-- |          col_name           |                     data_type                      | comment  |
+-- +-----------------------------+----------------------------------------------------+----------+
+-- | iso2_country_code           | string                                             |          |
+-- | iso3_country_code           | string                                             |          |
+-- |                             | NULL                                               | NULL     |
+-- | Detailed Table Information  | Table(tableName:iso3_orc, dbName:undkit_staging, owner:hive, createTime:1625991901, lastAccessTime:0, retention:0, sd:StorageDescriptor(cols:[FieldSchema(name:iso2_country_code, type:string, comment:null), FieldSchema(name:iso3_country_code, type:string, comment:null)], location:hdfs://adh-master:8020/apps/hive/warehouse/undkit_staging.db/iso3_orc, inputFormat:org.apache.hadoop.hive.ql.io.orc.OrcInputFormat, outputFormat:org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat, compressed:false, numBuckets:-1, serdeInfo:SerDeInfo(name:null, serializationLib:org.apache.hadoop.hive.ql.io.orc.OrcSerde, parameters:{serialization.format=1}), bucketCols:[], sortCols:[], parameters:{}, skewedInfo:SkewedInfo(skewedColNames:[], skewedColValues:[], skewedColValueLocationMaps:{}), storedAsSubDirectories:false), partitionKeys:[], parameters:{totalSize=1125, numRows=250, rawDataSize=43250, COLUMN_STATS_ACCURATE={\"BASIC_STATS\":\"true\"}, numFiles=1, transient_lastDdlTime=1625991901, bucketing_version=2}, viewOriginalText:null, viewExpandedText:null, tableType:MANAGED_TABLE, rewriteEnabled:false, catName:hive, ownerType:USER) |          |
+-- +-----------------------------+----------------------------------------------------+----------+
+
+DESCRIBE FORMATTED undkit_staging.iso3_orc;
+-- +-------------------------------+----------------------------------------------------+-----------------------------+
+-- |           col_name            |                     data_type                      |           comment           |
+-- +-------------------------------+----------------------------------------------------+-----------------------------+
+-- | # col_name                    | data_type                                          | comment                     |
+-- | iso2_country_code             | string                                             |                             |
+-- | iso3_country_code             | string                                             |                             |
+-- |                               | NULL                                               | NULL                        |
+-- | # Detailed Table Information  | NULL                                               | NULL                        |
+-- | Database:                     | undkit_staging                                     | NULL                        |
+-- | OwnerType:                    | USER                                               | NULL                        |
+-- | Owner:                        | hive                                               | NULL                        |
+-- | CreateTime:                   | Sun Jul 11 08:25:01 UTC 2021                       | NULL                        |
+-- | LastAccessTime:               | UNKNOWN                                            | NULL                        |
+-- | Retention:                    | 0                                                  | NULL                        |
+-- | Location:                     | hdfs://adh-master:8020/apps/hive/warehouse/undkit_staging.db/iso3_orc | NULL                        |
+-- | Table Type:                   | MANAGED_TABLE                                      | NULL                        |
+-- | Table Parameters:             | NULL                                               | NULL                        |
+-- |                               | COLUMN_STATS_ACCURATE                              | {\"BASIC_STATS\":\"true\"}  |
+-- |                               | bucketing_version                                  | 2                           |
+-- |                               | numFiles                                           | 1                           |
+-- |                               | numRows                                            | 250                         |
+-- |                               | rawDataSize                                        | 43250                       |
+-- |                               | totalSize                                          | 1125                        |
+-- |                               | transient_lastDdlTime                              | 1625991901                  |
+-- |                               | NULL                                               | NULL                        |
+-- | # Storage Information         | NULL                                               | NULL                        |
+-- | SerDe Library:                | org.apache.hadoop.hive.ql.io.orc.OrcSerde          | NULL                        |
+-- | InputFormat:                  | org.apache.hadoop.hive.ql.io.orc.OrcInputFormat    | NULL                        |
+-- | OutputFormat:                 | org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat   | NULL                        |
+-- | Compressed:                   | No                                                 | NULL                        |
+-- | Num Buckets:                  | -1                                                 | NULL                        |
+-- | Bucket Columns:               | []                                                 | NULL                        |
+-- | Sort Columns:                 | []                                                 | NULL                        |
+-- | Storage Desc Params:          | NULL                                               | NULL                        |
+-- |                               | serialization.format                               | 1                           |
+-- +-------------------------------+----------------------------------------------------+-----------------------------+
+
+DESCRIBE EXTENDED undkit_staging.currencies_orc;
+-- +-----------------------------+----------------------------------------------------+----------+
+-- |          col_name           |                     data_type                      | comment  |
+-- +-----------------------------+----------------------------------------------------+----------+
+-- | country_code                | string                                             |          |
+-- | currency_code               | string                                             |          |
+-- |                             | NULL                                               | NULL     |
+-- | Detailed Table Information  | Table(tableName:currencies_orc, dbName:undkit_staging, owner:hive, createTime:1625992471, lastAccessTime:0, retention:0, sd:StorageDescriptor(cols:[FieldSchema(name:country_code, type:string, comment:null), FieldSchema(name:currency_code, type:string, comment:null)], location:hdfs://adh-master:8020/apps/hive/warehouse/undkit_staging.db/currencies_orc, inputFormat:org.apache.hadoop.hive.ql.io.orc.OrcInputFormat, outputFormat:org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat, compressed:false, numBuckets:-1, serdeInfo:SerDeInfo(name:null, serializationLib:org.apache.hadoop.hive.ql.io.orc.OrcSerde, parameters:{serialization.format=1}), bucketCols:[], sortCols:[], parameters:{}, skewedInfo:SkewedInfo(skewedColNames:[], skewedColValues:[], skewedColValueLocationMaps:{}), storedAsSubDirectories:false), partitionKeys:[], parameters:{totalSize=1216, numRows=250, rawDataSize=43000, COLUMN_STATS_ACCURATE={\"BASIC_STATS\":\"true\"}, numFiles=1, transient_lastDdlTime=1625992471, bucketing_version=2}, viewOriginalText:null, viewExpandedText:null, tableType:MANAGED_TABLE, rewriteEnabled:false, catName:hive, ownerType:USER) |          |
+-- +-----------------------------+----------------------------------------------------+----------+
+
+DESCRIBE FORMATTED undkit_staging.currencies_orc;
+-- +-------------------------------+----------------------------------------------------+-----------------------------+
+-- |           col_name            |                     data_type                      |           comment           |
+-- +-------------------------------+----------------------------------------------------+-----------------------------+
+-- | # col_name                    | data_type                                          | comment                     |
+-- | country_code                  | string                                             |                             |
+-- | currency_code                 | string                                             |                             |
+-- |                               | NULL                                               | NULL                        |
+-- | # Detailed Table Information  | NULL                                               | NULL                        |
+-- | Database:                     | undkit_staging                                     | NULL                        |
+-- | OwnerType:                    | USER                                               | NULL                        |
+-- | Owner:                        | hive                                               | NULL                        |
+-- | CreateTime:                   | Sun Jul 11 08:34:31 UTC 2021                       | NULL                        |
+-- | LastAccessTime:               | UNKNOWN                                            | NULL                        |
+-- | Retention:                    | 0                                                  | NULL                        |
+-- | Location:                     | hdfs://adh-master:8020/apps/hive/warehouse/undkit_staging.db/currencies_orc | NULL                        |
+-- | Table Type:                   | MANAGED_TABLE                                      | NULL                        |
+-- | Table Parameters:             | NULL                                               | NULL                        |
+-- |                               | COLUMN_STATS_ACCURATE                              | {\"BASIC_STATS\":\"true\"}  |
+-- |                               | bucketing_version                                  | 2                           |
+-- |                               | numFiles                                           | 1                           |
+-- |                               | numRows                                            | 250                         |
+-- |                               | rawDataSize                                        | 43000                       |
+-- |                               | totalSize                                          | 1216                        |
+-- |                               | transient_lastDdlTime                              | 1625992471                  |
+-- |                               | NULL                                               | NULL                        |
+-- | # Storage Information         | NULL                                               | NULL                        |
+-- | SerDe Library:                | org.apache.hadoop.hive.ql.io.orc.OrcSerde          | NULL                        |
+-- | InputFormat:                  | org.apache.hadoop.hive.ql.io.orc.OrcInputFormat    | NULL                        |
+-- | OutputFormat:                 | org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat   | NULL                        |
+-- | Compressed:                   | No                                                 | NULL                        |
+-- | Num Buckets:                  | -1                                                 | NULL                        |
+-- | Bucket Columns:               | []                                                 | NULL                        |
+-- | Sort Columns:                 | []                                                 | NULL                        |
+-- | Storage Desc Params:          | NULL                                               | NULL                        |
+-- |                               | serialization.format                               | 1                           |
+-- +-------------------------------+----------------------------------------------------+-----------------------------+
+
+DESCRIBE EXTENDED undkit_staging.continents_orc;
+-- +-----------------------------+----------------------------------------------------+----------+
+-- |          col_name           |                     data_type                      | comment  |
+-- +-----------------------------+----------------------------------------------------+----------+
+-- | country_code                | string                                             |          |
+-- | continent_code              | string                                             |          |
+-- |                             | NULL                                               | NULL     |
+-- | Detailed Table Information  | Table(tableName:continents_orc, dbName:undkit_staging, owner:hive, createTime:1625992855, lastAccessTime:0, retention:0, sd:StorageDescriptor(cols:[FieldSchema(name:country_code, type:string, comment:null), FieldSchema(name:continent_code, type:string, comment:null)], location:hdfs://adh-master:8020/apps/hive/warehouse/undkit_staging.db/continents_orc, inputFormat:org.apache.hadoop.hive.ql.io.orc.OrcInputFormat, outputFormat:org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat, compressed:false, numBuckets:-1, serdeInfo:SerDeInfo(name:null, serializationLib:org.apache.hadoop.hive.ql.io.orc.OrcSerde, parameters:{serialization.format=1}), bucketCols:[], sortCols:[], parameters:{}, skewedInfo:SkewedInfo(skewedColNames:[], skewedColValues:[], skewedColValueLocationMaps:{}), storedAsSubDirectories:false), partitionKeys:[], parameters:{totalSize=790, numRows=250, rawDataSize=43000, COLUMN_STATS_ACCURATE={\"BASIC_STATS\":\"true\"}, numFiles=1, transient_lastDdlTime=1625992855, bucketing_version=2}, viewOriginalText:null, viewExpandedText:null, tableType:MANAGED_TABLE, rewriteEnabled:false, catName:hive, ownerType:USER) |          |
+-- +-----------------------------+----------------------------------------------------+----------+
+
+DESCRIBE FORMATTED undkit_staging.continents_orc;
+-- +-------------------------------+----------------------------------------------------+-----------------------------+
+-- |           col_name            |                     data_type                      |           comment           |
+-- +-------------------------------+----------------------------------------------------+-----------------------------+
+-- | # col_name                    | data_type                                          | comment                     |
+-- | country_code                  | string                                             |                             |
+-- | continent_code                | string                                             |                             |
+-- |                               | NULL                                               | NULL                        |
+-- | # Detailed Table Information  | NULL                                               | NULL                        |
+-- | Database:                     | undkit_staging                                     | NULL                        |
+-- | OwnerType:                    | USER                                               | NULL                        |
+-- | Owner:                        | hive                                               | NULL                        |
+-- | CreateTime:                   | Sun Jul 11 08:40:55 UTC 2021                       | NULL                        |
+-- | LastAccessTime:               | UNKNOWN                                            | NULL                        |
+-- | Retention:                    | 0                                                  | NULL                        |
+-- | Location:                     | hdfs://adh-master:8020/apps/hive/warehouse/undkit_staging.db/continents_orc | NULL                        |
+-- | Table Type:                   | MANAGED_TABLE                                      | NULL                        |
+-- | Table Parameters:             | NULL                                               | NULL                        |
+-- |                               | COLUMN_STATS_ACCURATE                              | {\"BASIC_STATS\":\"true\"}  |
+-- |                               | bucketing_version                                  | 2                           |
+-- |                               | numFiles                                           | 1                           |
+-- |                               | numRows                                            | 250                         |
+-- |                               | rawDataSize                                        | 43000                       |
+-- |                               | totalSize                                          | 790                         |
+-- |                               | transient_lastDdlTime                              | 1625992855                  |
+-- |                               | NULL                                               | NULL                        |
+-- | # Storage Information         | NULL                                               | NULL                        |
+-- | SerDe Library:                | org.apache.hadoop.hive.ql.io.orc.OrcSerde          | NULL                        |
+-- | InputFormat:                  | org.apache.hadoop.hive.ql.io.orc.OrcInputFormat    | NULL                        |
+-- | OutputFormat:                 | org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat   | NULL                        |
+-- | Compressed:                   | No                                                 | NULL                        |
+-- | Num Buckets:                  | -1                                                 | NULL                        |
+-- | Bucket Columns:               | []                                                 | NULL                        |
+-- | Sort Columns:                 | []                                                 | NULL                        |
+-- | Storage Desc Params:          | NULL                                               | NULL                        |
+-- |                               | serialization.format                               | 1                           |
+-- +-------------------------------+----------------------------------------------------+-----------------------------+
+
+DESCRIBE EXTENDED undkit_staging.capitals_orc;
+-- +-----------------------------+----------------------------------------------------+----------+
+-- |          col_name           |                     data_type                      | comment  |
+-- +-----------------------------+----------------------------------------------------+----------+
+-- | country_code                | string                                             |          |
+-- | capital                     | string                                             |          |
+-- |                             | NULL                                               | NULL     |
+-- | Detailed Table Information  | Table(tableName:capitals_orc, dbName:undkit_staging, owner:hive, createTime:1625993129, lastAccessTime:0, retention:0, sd:StorageDescriptor(cols:[FieldSchema(name:country_code, type:string, comment:null), FieldSchema(name:capital, type:string, comment:null)], location:hdfs://adh-master:8020/apps/hive/warehouse/undkit_staging.db/capitals_orc, inputFormat:org.apache.hadoop.hive.ql.io.orc.OrcInputFormat, outputFormat:org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat, compressed:false, numBuckets:-1, serdeInfo:SerDeInfo(name:null, serializationLib:org.apache.hadoop.hive.ql.io.orc.OrcSerde, parameters:{serialization.format=1}), bucketCols:[], sortCols:[], parameters:{}, skewedInfo:SkewedInfo(skewedColNames:[], skewedColValues:[], skewedColValueLocationMaps:{}), storedAsSubDirectories:false), partitionKeys:[], parameters:{totalSize=2053, numRows=250, rawDataSize=44250, COLUMN_STATS_ACCURATE={\"BASIC_STATS\":\"true\"}, numFiles=1, transient_lastDdlTime=1625993129, bucketing_version=2}, viewOriginalText:null, viewExpandedText:null, tableType:MANAGED_TABLE, rewriteEnabled:false, catName:hive, ownerType:USER) |          |
+-- +-----------------------------+----------------------------------------------------+----------+
+
+DESCRIBE FORMATTED undkit_staging.capitals_orc;
+-- +-------------------------------+----------------------------------------------------+-----------------------------+
+-- |           col_name            |                     data_type                      |           comment           |
+-- +-------------------------------+----------------------------------------------------+-----------------------------+
+-- | # col_name                    | data_type                                          | comment                     |
+-- | country_code                  | string                                             |                             |
+-- | capital                       | string                                             |                             |
+-- |                               | NULL                                               | NULL                        |
+-- | # Detailed Table Information  | NULL                                               | NULL                        |
+-- | Database:                     | undkit_staging                                     | NULL                        |
+-- | OwnerType:                    | USER                                               | NULL                        |
+-- | Owner:                        | hive                                               | NULL                        |
+-- | CreateTime:                   | Sun Jul 11 08:45:29 UTC 2021                       | NULL                        |
+-- | LastAccessTime:               | UNKNOWN                                            | NULL                        |
+-- | Retention:                    | 0                                                  | NULL                        |
+-- | Location:                     | hdfs://adh-master:8020/apps/hive/warehouse/undkit_staging.db/capitals_orc | NULL                        |
+-- | Table Type:                   | MANAGED_TABLE                                      | NULL                        |
+-- | Table Parameters:             | NULL                                               | NULL                        |
+-- |                               | COLUMN_STATS_ACCURATE                              | {\"BASIC_STATS\":\"true\"}  |
+-- |                               | bucketing_version                                  | 2                           |
+-- |                               | numFiles                                           | 1                           |
+-- |                               | numRows                                            | 250                         |
+-- |                               | rawDataSize                                        | 44250                       |
+-- |                               | totalSize                                          | 2053                        |
+-- |                               | transient_lastDdlTime                              | 1625993129                  |
+-- |                               | NULL                                               | NULL                        |
+-- | # Storage Information         | NULL                                               | NULL                        |
+-- | SerDe Library:                | org.apache.hadoop.hive.ql.io.orc.OrcSerde          | NULL                        |
+-- | InputFormat:                  | org.apache.hadoop.hive.ql.io.orc.OrcInputFormat    | NULL                        |
+-- | OutputFormat:                 | org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat   | NULL                        |
+-- | Compressed:                   | No                                                 | NULL                        |
+-- | Num Buckets:                  | -1                                                 | NULL                        |
+-- | Bucket Columns:               | []                                                 | NULL                        |
+-- | Sort Columns:                 | []                                                 | NULL                        |
+-- | Storage Desc Params:          | NULL                                               | NULL                        |
+-- |                               | serialization.format                               | 1                           |
+-- +-------------------------------+----------------------------------------------------+-----------------------------+
+
+DESCRIBE EXTENDED undkit_staging.countries_orc;
+-- +-----------------------------+----------------------------------------------------+----------+
+-- |          col_name           |                     data_type                      | comment  |
+-- +-----------------------------+----------------------------------------------------+----------+
+-- | country                     | string                                             |          |
+-- | region                      | string                                             |          |
+-- | population                  | int                                                |          |
+-- | area                        | int                                                |          |
+-- | pop_density                 | decimal(5,1)                                       |          |
+-- | coastline                   | decimal(5,2)                                       |          |
+-- | net_migration               | decimal(4,2)                                       |          |
+-- | infant_mortality            | decimal(5,2)                                       |          |
+-- | gdp                         | int                                                |          |
+-- | literacy                    | decimal(4,1)                                       |          |
+-- | phones                      | decimal(5,1)                                       |          |
+-- | arable                      | decimal(4,2)                                       |          |
+-- | crops                       | decimal(4,2)                                       |          |
+-- | other                       | decimal(5,2)                                       |          |
+-- | climate                     | tinyint                                            |          |
+-- | birthrate                   | decimal(5,2)                                       |          |
+-- | deathrate                   | decimal(5,2)                                       |          |
+-- | agriculture                 | decimal(4,3)                                       |          |
+-- | industry                    | decimal(4,3)                                       |          |
+-- | service                     | decimal(4,3)                                       |          |
+-- |                             | NULL                                               | NULL     |
+-- | Detailed Table Information  | Table(tableName:countries_orc, dbName:undkit_staging, owner:hive, createTime:1625995133, lastAccessTime:0, retention:0, sd:StorageDescriptor(cols:[FieldSchema(name:country, type:string, comment:null), FieldSchema(name:region, type:string, comment:null), FieldSchema(name:population, type:int, comment:null), FieldSchema(name:area, type:int, comment:null), FieldSchema(name:pop_density, type:decimal(5,1), comment:null), FieldSchema(name:coastline, type:decimal(5,2), comment:null), FieldSchema(name:net_migration, type:decimal(4,2), comment:null), FieldSchema(name:infant_mortality, type:decimal(5,2), comment:null), FieldSchema(name:gdp, type:int, comment:null), FieldSchema(name:literacy, type:decimal(4,1), comment:null), FieldSchema(name:phones, type:decimal(5,1), comment:null), FieldSchema(name:arable, type:decimal(4,2), comment:null), FieldSchema(name:crops, type:decimal(4,2), comment:null), FieldSchema(name:other, type:decimal(5,2), comment:null), FieldSchema(name:climate, type:tinyint, comment:null), FieldSchema(name:birthrate, type:decimal(5,2), comment:null), FieldSchema(name:deathrate, type:decimal(5,2), comment:null), FieldSchema(name:agriculture, type:decimal(4,3), comment:null), FieldSchema(name:industry, type:decimal(4,3), comment:null), FieldSchema(name:service, type:decimal(4,3), comment:null)], location:hdfs://adh-master:8020/apps/hive/warehouse/undkit_staging.db/countries_orc, inputFormat:org.apache.hadoop.hive.ql.io.orc.OrcInputFormat, outputFormat:org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat, compressed:false, numBuckets:-1, serdeInfo:SerDeInfo(name:null, serializationLib:org.apache.hadoop.hive.ql.io.orc.OrcSerde, parameters:{serialization.format=1}), bucketCols:[], sortCols:[], parameters:{}, skewedInfo:SkewedInfo(skewedColNames:[], skewedColValues:[], skewedColValueLocationMaps:{}), storedAsSubDirectories:false), partitionKeys:[], parameters:{totalSize=11965, numRows=227, rawDataSize=392821, COLUMN_STATS_ACCURATE={\"BASIC_STATS\":\"true\"}, numFiles=1, transient_lastDdlTime=1625995133, bucketing_version=2}, viewOriginalText:null, viewExpandedText:null, tableType:MANAGED_TABLE, rewriteEnabled:false, catName:hive, ownerType:USER) |          |
+-- +-----------------------------+----------------------------------------------------+----------+
+
+DESCRIBE FORMATTED undkit_staging.countries_orc;
+-- +-------------------------------+----------------------------------------------------+-----------------------------+
+-- |           col_name            |                     data_type                      |           comment           |
+-- +-------------------------------+----------------------------------------------------+-----------------------------+
+-- | # col_name                    | data_type                                          | comment                     |
+-- | country                       | string                                             |                             |
+-- | region                        | string                                             |                             |
+-- | population                    | int                                                |                             |
+-- | area                          | int                                                |                             |
+-- | pop_density                   | decimal(5,1)                                       |                             |
+-- | coastline                     | decimal(5,2)                                       |                             |
+-- | net_migration                 | decimal(4,2)                                       |                             |
+-- | infant_mortality              | decimal(5,2)                                       |                             |
+-- | gdp                           | int                                                |                             |
+-- | literacy                      | decimal(4,1)                                       |                             |
+-- | phones                        | decimal(5,1)                                       |                             |
+-- | arable                        | decimal(4,2)                                       |                             |
+-- | crops                         | decimal(4,2)                                       |                             |
+-- | other                         | decimal(5,2)                                       |                             |
+-- | climate                       | tinyint                                            |                             |
+-- | birthrate                     | decimal(5,2)                                       |                             |
+-- | deathrate                     | decimal(5,2)                                       |                             |
+-- | agriculture                   | decimal(4,3)                                       |                             |
+-- | industry                      | decimal(4,3)                                       |                             |
+-- | service                       | decimal(4,3)                                       |                             |
+-- |                               | NULL                                               | NULL                        |
+-- | # Detailed Table Information  | NULL                                               | NULL                        |
+-- | Database:                     | undkit_staging                                     | NULL                        |
+-- | OwnerType:                    | USER                                               | NULL                        |
+-- | Owner:                        | hive                                               | NULL                        |
+-- | CreateTime:                   | Sun Jul 11 09:18:53 UTC 2021                       | NULL                        |
+-- | LastAccessTime:               | UNKNOWN                                            | NULL                        |
+-- | Retention:                    | 0                                                  | NULL                        |
+-- | Location:                     | hdfs://adh-master:8020/apps/hive/warehouse/undkit_staging.db/countries_orc | NULL                        |
+-- | Table Type:                   | MANAGED_TABLE                                      | NULL                        |
+-- | Table Parameters:             | NULL                                               | NULL                        |
+-- |                               | COLUMN_STATS_ACCURATE                              | {\"BASIC_STATS\":\"true\"}  |
+-- |                               | bucketing_version                                  | 2                           |
+-- |                               | numFiles                                           | 1                           |
+-- |                               | numRows                                            | 227                         |
+-- |                               | rawDataSize                                        | 392821                      |
+-- |                               | totalSize                                          | 11965                       |
+-- |                               | transient_lastDdlTime                              | 1625995133                  |
+-- |                               | NULL                                               | NULL                        |
+-- | # Storage Information         | NULL                                               | NULL                        |
+-- | SerDe Library:                | org.apache.hadoop.hive.ql.io.orc.OrcSerde          | NULL                        |
+-- | InputFormat:                  | org.apache.hadoop.hive.ql.io.orc.OrcInputFormat    | NULL                        |
+-- | OutputFormat:                 | org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat   | NULL                        |
+-- | Compressed:                   | No                                                 | NULL                        |
+-- | Num Buckets:                  | -1                                                 | NULL                        |
+-- | Bucket Columns:               | []                                                 | NULL                        |
+-- | Sort Columns:                 | []                                                 | NULL                        |
+-- | Storage Desc Params:          | NULL                                               | NULL                        |
+-- |                               | serialization.format                               | 1                           |
+-- +-------------------------------+----------------------------------------------------+-----------------------------+
+
