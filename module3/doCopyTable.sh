@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# doCopyTable.sh cities undkit_staging
+
 tabName=$1
 dbName=$2
 hiveTab="$dbName.$tabName"

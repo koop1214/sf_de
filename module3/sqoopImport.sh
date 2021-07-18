@@ -1,4 +1,19 @@
-#!/usr/bin/env bash
+#!/bin/bash
+
+# sqoopImport - A script to Import table into database with sqoop
+
+##### Functions
+
+usage()
+{
+    echo "Usage: sqoopImport <tabName> [dbName]"
+}
+
+##### Main
+if [ "$#" -lt 1 ]; then
+    usage
+    exit
+fi
 
 tabName=$1
 dbName=default
