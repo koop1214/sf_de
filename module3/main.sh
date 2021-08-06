@@ -54,7 +54,7 @@ selectFields="*"
 ./createExternalTable.sh $fileName $tabName $dbName "$createFields" "$selectFields"
 
 ##################################################### Countries ########################################################
-fileName="/tmp/ai/countries_of_the_world.csv"
+fileName="/home/deng/Data/countries_of_the_world.csv"
 tabName=countries
 createFields="country          STRING,
     region           STRING,
